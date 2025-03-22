@@ -1,0 +1,285 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #443627; /* Dark Brown - Body Background */
+    color: #f0ead6; /* Light Beige - Main Text Color */
+}
+
+header {
+    background-color: #18230F; /* Darkest Green - Header Background */
+    color: #f0ead6; /* Light Beige - Header Text Color */
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #f0ead6; /* Light Beige - Link Color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #255F38; /* Medium Green - Hover Color */
+}
+
+section {
+    padding: 4rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #f0ead6; /* Light Beige - Section Heading */
+}
+
+/* Hero Section */
+#hero {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-Transparent White */
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    color: #f0ead6;  /* Light Beige - Hero Title */
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #ddd;  /* Lighter Grey */
+}
+
+.button {
+    display: inline-block;
+    background-color: #1F7D53; /* Light Green - Button Background */
+    color: #f0ead6;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #255F38; /* Medium Green - Button Hover */
+}
+
+/* About Section */
+#about {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-Transparent White */
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ddd;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+#about-image {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%; /* Optional: Make it a circle */
+    margin-right: 20px; /* Space between image and text */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.skills-category {
+    text-align: center;
+}
+
+.skills-category h3 {
+    color: #1F7D53; /* Light Green - Skill Category Heading */
+    margin-bottom: 0.5rem;
+}
+
+/* Projects Section */
+#projects {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-Transparent White */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: rgba(0, 0, 0, 0.1); /* Semi-Transparent Black */
+    border-radius: 5px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Darker Shadow */
+}
+
+.project-card img {
+    width: 100%;        /* Make images responsive within their cards */
+    max-height: 200px;   /* Optional: Limit image height for consistency */
+    object-fit: cover;  /* Crop/scale image to fill the container */
+    margin-bottom: 1rem; /* Add spacing below the image */
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #f0ead6;  /* Light Beige - Project Title */
+}
+
+.tech-stack {
+    margin-top: 1rem;
+}
+
+.tech-stack span {
+    background-color: #bdc3c7;
+    color: #fff;
+    padding: 0.4rem 0.75rem;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Contact Section */
+#contact {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-Transparent White */
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+.contact-info a {
+    color: #1F7D53; /* Light Green - Link Color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #255F38; /* Medium Green - Link Hover */
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form label {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #f0ead6;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1); /* Semi-Transparent Black */
+    color: #f0ead6; /* Light Beige */
+}
+
+#contact-form button {
+    background-color: #1F7D53;  /* Light Green - Button Background */
+    color: #f0ead6;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #255F38; /* Medium Green - Button Hover */
+}
+
+/* Footer */
+footer {
+    background-color: #18230F; /* Darkest Green - Footer Background */
+    color: #f0ead6;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-category {
+        margin-bottom: 2rem;
+    }
+}
